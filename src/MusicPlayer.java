@@ -167,7 +167,7 @@ public class MusicPlayer {
     public LinkedList<String> showHistory(){
         LinkedList<String> historyList = new LinkedList<>();
         for (Node node : history){
-            historyList.offerFirst(node.song.getTitle().toString());
+            historyList.addLast(node.song.getTitle().toString());
         }
         return historyList;
     }
